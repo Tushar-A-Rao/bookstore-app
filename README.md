@@ -9,7 +9,7 @@ A full-stack BookStore application built as a DevOps learning project.
 
 ## 🚀 Project Roadmap
 - ✅ Phase 1 - Flask Backend + Frontend
-- ⏳ Phase 2 - Microservices
+- ✅ Phase 2 - Microservices
 - ⏳ Phase 3 - Docker + Docker Compose
 - ⏳ Phase 4 - CI/CD Pipeline
 - ⏳ Phase 5 - Kubernetes
