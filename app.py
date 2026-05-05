@@ -1,4 +1,8 @@
-from flask import Flask, jsonify, request, render_template
+# ─────────────────────────────────────────
+# BookStore App - Monolith Version (Phase 1)
+# Refactored to Microservices in Phase 2
+# ─────────────────────────────────────────from flask import Flask, jsonify, request, render_template
+
 from flask_cors import CORS
 from pymongo import MongoClient
 from dotenv import load_dotenv
