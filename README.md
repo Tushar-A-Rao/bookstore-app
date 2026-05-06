@@ -30,3 +30,6 @@ A full-stack BookStore application built as a DevOps learning project.
 pip install flask pymongo python-dotenv flask-cors
 4. Run the app
 python app.py
+## Phase 3 — Docker (In Progress)
+- Dockerizing all 3 microservices
+- Docker Compose setup coming soon
