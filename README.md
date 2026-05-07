@@ -33,3 +33,4 @@ python app.py
 ## Phase 3 — Docker (In Progress)
 - Dockerizing all 3 microservices
 - Docker Compose setup coming soon
+## Phase 3 — Docker (In Progress)
