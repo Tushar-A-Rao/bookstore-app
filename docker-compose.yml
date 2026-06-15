@@ -1,0 +1,31 @@
+services:
+  book_service:
+    build: ./book_service
+    ports:
+      - "5001:5001"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - DB_NAME=${DB_NAME}
+    networks:
+      -  bookstore-net
+  frontend_service:
+    build: ./frontend_service
+    ports:
+      - "5000:5000"
+    depends_on:
+      - book_service
+      - search_service
+    networks:
+      - bookstore-net
+  search_service:
+    build: ./search_service
+    ports:
+      - "5002:5002"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - DB_NAME=${DB_NAME}
+    networks:
+      - bookstore-net
+networks:
+  bookstore-net:
+    driver: bridge
